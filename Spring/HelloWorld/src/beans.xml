@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--configure User instance creation-->
+    <bean id="user" class="User"></bean>
+
+    <!--configure Book instance creation-->
+    <bean id="book" class="Book">
+        <!--use set to inject attribute-->
+        <property name="name">
+            <value><![CDATA[<<my first book>>]]></value>
+        </property>
+        <property name="author" value="Thomas Gao"></property>
+        <property name="publisher">
+            <null/>
+        </property>
+    </bean>
+
+    <!--configure Book instance creation with p namespace-->
+<!--    <bean id="book" class="Book" p:name="my first book" p:author="Thomas Gao">-->
+<!--    </bean>-->
+
+    <!--configure Order instance creation-->
+    <bean id="order" class="Order">
+        <constructor-arg name="name" value="my test order"></constructor-arg>
+        <constructor-arg name="address" value="my current address"></constructor-arg>
+<!--        <constructor-arg index="0" value="my test order"></constructor-arg>-->
+<!--        <constructor-arg index="1" value="my current address"></constructor-arg>-->
+    </bean>
+</beans>

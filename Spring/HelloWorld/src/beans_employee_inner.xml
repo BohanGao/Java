@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--configure Employee instance-->
+    <bean id="employee" class="Employee">
+        <property name="name" value="Jason"></property>
+        <property name="gender" value="male"></property>
+        <property name="department">
+            <!--configure inner Department instance-->
+            <bean id="department" class="Department">
+                <property name="name" value="security"></property>
+            </bean>
+        </property>
+    </bean>
+
+</beans>
