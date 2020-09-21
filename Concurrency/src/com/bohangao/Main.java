@@ -1,5 +1,6 @@
 package com.bohangao;
 
+import com.bohangao.DaemonThread.DaemonThreadDemo;
 import com.bohangao.Runnable.RunnableDemo;
 import com.bohangao.Scheduling.SchedulingDemo;
 import com.bohangao.ThreadLifeCycle.ThreadLifeCycleDemo;
@@ -11,6 +12,8 @@ public class Main {
 
         //ThreadLifeCycleDemo.demo();
 
-        RunnableDemo.demo();
+        //RunnableDemo.demo();
+
+        DaemonThreadDemo.demo();
     }
 }

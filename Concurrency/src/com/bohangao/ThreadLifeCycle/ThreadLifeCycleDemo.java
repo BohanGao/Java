@@ -41,4 +41,4 @@ class SausageCutter extends Thread {
 //getName(), setName() - get and set the name of the thread
 //getPriority(), setPriority() - get and set the priority of a thread, 1-10, 10 is highest
 
-//unlike c++ thread, java thread is always "detached". child thread does not have access to parent thread. this is for garbage collection purpose
+//Child thread does not have access to parent thread. this is for garbage collection purpose
