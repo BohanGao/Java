@@ -34,3 +34,11 @@ class SausageCutter extends Thread {
         System.out.println("Ashley is done cutting sausage.");
     }
 }
+
+//getState() - get state of a thread
+//currentThread() - return current thread object
+//getID() - get thread id of the current thread
+//getName(), setName() - get and set the name of the thread
+//getPriority(), setPriority() - get and set the priority of a thread, 1-10, 10 is highest
+
+//unlike c++ thread, java thread is always "detached". child thread does not have access to parent thread. this is for garbage collection purpose
