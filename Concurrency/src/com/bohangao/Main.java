@@ -1,17 +1,6 @@
 package com.bohangao;
 
-import TryLock.NoTryLockDemo;
-import TryLock.TryLockDemo;
-import com.bohangao.AtomicVariable.AtomicVariableDemo;
-import com.bohangao.DaemonThread.DaemonThreadDemo;
-import com.bohangao.DataRace.DataRaceDemo;
-import com.bohangao.MutualExclusion.MutualExclusionDemo;
-import com.bohangao.ReentrantLock.ReentrantLockDemo;
-import com.bohangao.Runnable.RunnableDemo;
-import com.bohangao.Scheduling.SchedulingDemo;
-import com.bohangao.Synchronized.SynchronizedMethodDemo;
-import com.bohangao.Synchronized.SynchronizedStatementDemo;
-import com.bohangao.ThreadLifeCycle.ThreadLifeCycleDemo;
+import com.bohangao.TryLock.TryLockDemo;
 
 public class Main {
 

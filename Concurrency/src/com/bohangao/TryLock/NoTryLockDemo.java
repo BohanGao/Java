@@ -1,12 +1,12 @@
-package TryLock;
+package com.bohangao.TryLock;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class TryLockDemo {
+public class NoTryLockDemo {
     public static void demo() throws InterruptedException {
-        Thread thomas = new Thread(new TryLockShopper("Thomas"));
-        Thread ashley = new Thread(new TryLockShopper("Ashley"));
+        Thread thomas = new Thread(new NoTryLockShopper("Thomas"));
+        Thread ashley = new Thread(new NoTryLockShopper("Ashley"));
         long start = System.currentTimeMillis();
         thomas.start();
         ashley.start();
@@ -17,21 +17,22 @@ public class TryLockDemo {
     }
 }
 
-class TryLockShopper implements Runnable {
+class NoTryLockShopper implements Runnable {
 
     private String name;
     private int itemsToRecord = 0;
     private static int itemsRecorded = 0;
     private static Lock pencil = new ReentrantLock();
 
-    public TryLockShopper(String name){
+    public NoTryLockShopper(String name){
         this.name = name;
     }
 
     public void run() {
         while(itemsRecorded <= 20){
-            if((itemsToRecord)>0 && pencil.tryLock()){
+            if((itemsToRecord)>0){
                 try{
+                    pencil.lock();
                     itemsRecorded += itemsToRecord;
                     System.out.println(name+" added " + itemsToRecord + " item(s) to notepad.");
                     itemsToRecord = 0;
