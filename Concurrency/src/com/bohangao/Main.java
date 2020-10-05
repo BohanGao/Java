@@ -4,6 +4,7 @@ import com.bohangao.AtomicVariable.AtomicVariableDemo;
 import com.bohangao.DaemonThread.DaemonThreadDemo;
 import com.bohangao.DataRace.DataRaceDemo;
 import com.bohangao.MutualExclusion.MutualExclusionDemo;
+import com.bohangao.ReentrantLock.ReentrantLockDemo;
 import com.bohangao.Runnable.RunnableDemo;
 import com.bohangao.Scheduling.SchedulingDemo;
 import com.bohangao.Synchronized.SynchronizedMethodDemo;
@@ -28,6 +29,8 @@ public class Main {
         //AtomicVariableDemo.demo();
 
         //SynchronizedMethodDemo.demo();
-        SynchronizedStatementDemo.demo();
+        //SynchronizedStatementDemo.demo();
+
+        ReentrantLockDemo.demo();
     }
 }
