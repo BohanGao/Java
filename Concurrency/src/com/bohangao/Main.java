@@ -3,6 +3,7 @@ package com.bohangao;
 import com.bohangao.AbandondedLock.AbandondedLockDemo;
 import com.bohangao.DeadLock.DeadLockDemo;
 import com.bohangao.ReadWriteLock.ReadWriteLockDemo;
+import com.bohangao.Starvation.StarvationDemo;
 
 public class Main {
 
@@ -21,7 +22,7 @@ public class Main {
 
         //AtomicVariableDemo.demo();
 
-        //SynchronizedMethodDemo.demo();
+        //SynchronizedMethodDemo.demo()
         //SynchronizedStatementDemo.demo();
 
         //ReentrantLockDemo.demo();
@@ -34,6 +35,8 @@ public class Main {
 
         //DeadLockDemo.demo();
 
-        AbandondedLockDemo.demo();
+        //AbandondedLockDemo.demo();
+
+        StarvationDemo.demo();
     }
 }
