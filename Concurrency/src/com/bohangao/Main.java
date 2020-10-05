@@ -1,5 +1,7 @@
 package com.bohangao;
 
+import com.bohangao.AbandondedLock.AbandondedLockDemo;
+import com.bohangao.DeadLock.DeadLockDemo;
 import com.bohangao.ReadWriteLock.ReadWriteLockDemo;
 
 public class Main {
@@ -28,6 +30,10 @@ public class Main {
         //TryLockDemo.demo();
 
         //NoReadWriteLockDemo.demo();
-        ReadWriteLockDemo.demo();
+        //ReadWriteLockDemo.demo();
+
+        //DeadLockDemo.demo();
+
+        AbandondedLockDemo.demo();
     }
 }
