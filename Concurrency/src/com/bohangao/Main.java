@@ -6,6 +6,8 @@ import com.bohangao.DataRace.DataRaceDemo;
 import com.bohangao.MutualExclusion.MutualExclusionDemo;
 import com.bohangao.Runnable.RunnableDemo;
 import com.bohangao.Scheduling.SchedulingDemo;
+import com.bohangao.Synchronized.SynchronizedMethodDemo;
+import com.bohangao.Synchronized.SynchronizedStatementDemo;
 import com.bohangao.ThreadLifeCycle.ThreadLifeCycleDemo;
 
 public class Main {
@@ -23,6 +25,9 @@ public class Main {
 
         //MutualExclusionDemo.demo();
 
-        AtomicVariableDemo.demo();
+        //AtomicVariableDemo.demo();
+
+        //SynchronizedMethodDemo.demo();
+        SynchronizedStatementDemo.demo();
     }
 }
