@@ -2,6 +2,7 @@ package com.bohangao;
 
 import com.bohangao.AbandondedLock.AbandondedLockDemo;
 import com.bohangao.DeadLock.DeadLockDemo;
+import com.bohangao.LiveLock.LiveLockDemo;
 import com.bohangao.ReadWriteLock.ReadWriteLockDemo;
 import com.bohangao.Starvation.StarvationDemo;
 
@@ -37,6 +38,8 @@ public class Main {
 
         //AbandondedLockDemo.demo();
 
-        StarvationDemo.demo();
+        //StarvationDemo.demo();
+
+        LiveLockDemo.demo();
     }
 }
