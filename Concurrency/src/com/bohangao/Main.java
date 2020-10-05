@@ -1,5 +1,7 @@
 package com.bohangao;
 
+import TryLock.NoTryLockDemo;
+import TryLock.TryLockDemo;
 import com.bohangao.AtomicVariable.AtomicVariableDemo;
 import com.bohangao.DaemonThread.DaemonThreadDemo;
 import com.bohangao.DataRace.DataRaceDemo;
@@ -31,6 +33,9 @@ public class Main {
         //SynchronizedMethodDemo.demo();
         //SynchronizedStatementDemo.demo();
 
-        ReentrantLockDemo.demo();
+        //ReentrantLockDemo.demo();
+
+        //NoTryLockDemo.demo();
+        TryLockDemo.demo();
     }
 }
