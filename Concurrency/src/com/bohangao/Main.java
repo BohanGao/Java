@@ -1,8 +1,10 @@
 package com.bohangao;
 
 import com.bohangao.AbandondedLock.AbandondedLockDemo;
+import com.bohangao.ConditionalVariable.ConditionalVariableDemo;
 import com.bohangao.DeadLock.DeadLockDemo;
 import com.bohangao.LiveLock.LiveLockDemo;
+import com.bohangao.ProducerConsumer.ProducerConsumerDemo;
 import com.bohangao.ReadWriteLock.ReadWriteLockDemo;
 import com.bohangao.Starvation.StarvationDemo;
 
@@ -40,6 +42,10 @@ public class Main {
 
         //StarvationDemo.demo();
 
-        LiveLockDemo.demo();
+        //LiveLockDemo.demo();
+
+        //ConditionalVariableDemo.demo();
+
+        ProducerConsumerDemo.demo();
     }
 }
