@@ -1,5 +1,6 @@
 package com.bohangao;
 
+import com.bohangao.AtomicVariable.AtomicVariableDemo;
 import com.bohangao.DaemonThread.DaemonThreadDemo;
 import com.bohangao.DataRace.DataRaceDemo;
 import com.bohangao.MutualExclusion.MutualExclusionDemo;
@@ -20,6 +21,8 @@ public class Main {
 
         //DataRaceDemo.demo();
 
-        MutualExclusionDemo.demo();
+        //MutualExclusionDemo.demo();
+
+        AtomicVariableDemo.demo();
     }
 }
