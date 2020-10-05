@@ -1,6 +1,8 @@
 package com.bohangao;
 
 import com.bohangao.DaemonThread.DaemonThreadDemo;
+import com.bohangao.DataRace.DataRaceDemo;
+import com.bohangao.MutualExclusion.MutualExclusionDemo;
 import com.bohangao.Runnable.RunnableDemo;
 import com.bohangao.Scheduling.SchedulingDemo;
 import com.bohangao.ThreadLifeCycle.ThreadLifeCycleDemo;
@@ -14,6 +16,10 @@ public class Main {
 
         //RunnableDemo.demo();
 
-        DaemonThreadDemo.demo();
+        //DaemonThreadDemo.demo();
+
+        //DataRaceDemo.demo();
+
+        MutualExclusionDemo.demo();
     }
 }
