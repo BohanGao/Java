@@ -1,6 +1,6 @@
 package com.bohangao;
 
-import com.bohangao.TryLock.TryLockDemo;
+import com.bohangao.ReadWriteLock.ReadWriteLockDemo;
 
 public class Main {
 
@@ -25,6 +25,9 @@ public class Main {
         //ReentrantLockDemo.demo();
 
         //NoTryLockDemo.demo();
-        TryLockDemo.demo();
+        //TryLockDemo.demo();
+
+        //NoReadWriteLockDemo.demo();
+        ReadWriteLockDemo.demo();
     }
 }
