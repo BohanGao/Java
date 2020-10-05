@@ -6,6 +6,7 @@ import com.bohangao.DeadLock.DeadLockDemo;
 import com.bohangao.LiveLock.LiveLockDemo;
 import com.bohangao.ProducerConsumer.ProducerConsumerDemo;
 import com.bohangao.ReadWriteLock.ReadWriteLockDemo;
+import com.bohangao.Semaphore.SemaphoreDemo;
 import com.bohangao.Starvation.StarvationDemo;
 
 public class Main {
@@ -46,6 +47,8 @@ public class Main {
 
         //ConditionalVariableDemo.demo();
 
-        ProducerConsumerDemo.demo();
+        //ProducerConsumerDemo.demo();
+
+        SemaphoreDemo.demo();
     }
 }
